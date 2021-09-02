@@ -1,0 +1,14 @@
+.full-star-icon,.half-star-icon{
+    color:#fbb023;
+}
+
+.empty-star-icon{
+    color:#999;
+}
+
+.total-rating-votes {
+    margin-left: 5px;
+    position: relative;
+    bottom: -2px;
+    color: rgba(0, 0, 0, 0.4);
+}

@@ -1,0 +1,16 @@
+.view-as ul li {
+    display: inline-block;
+    font-size: 17px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.view-as ul li.active svg{
+    color: #FE4847;
+}
+
+@media (max-width: 480px) {
+    .view-as {
+        display: none;
+    }
+}

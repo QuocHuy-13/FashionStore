@@ -1,0 +1,102 @@
+.cart-table .table {
+    margin: 0;
+    white-space: nowrap;
+}
+
+.cart-table .table thead {
+    background-color: #fe4847;
+}
+
+.cart-table .table thead tr th {
+    border-bottom: 0 solid transparent;
+    color: #fff;
+    font-size: 1rem;
+    line-height: 1.5;
+    font-weight: 700;
+    padding: 15px 20px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.cart-table .table tr .pro-thumbnail, .cart-table .table tr .pro-price, .cart-table .table tr .pro-quantity, .cart-table .table tr .pro-subtotal, .cart-table .table tr .pro-remove {
+    width: 140px;
+}
+
+.cart-table .table tbody tr td {
+    text-align: center;
+    padding: 10px 20px;
+    vertical-align: middle;
+    font-weight: 600;
+    color: #202020;
+}
+
+.shop-cart-image {
+    width: 100%;
+    height: auto;
+}
+
+.pro-title span .sold-name {
+    text-transform: uppercase;
+}
+
+.cart-quantity {
+    display: flex;
+    align-items: center;
+}
+
+.cart-quantity .display-quantity {
+    min-width: 2.5rem;
+    text-align: center;
+}
+
+.cart-quantity .btn-quantity {
+    padding: 6px 8px;
+    background-color: rgba(0,0,0,.05);
+    border-radius: 50%;
+    border: none;
+    min-width: 2.2rem;
+    height: 2.2rem;
+}
+
+.btn-remove {
+    color: #ffffff;
+    background-color: #F44336;
+    border-color: #f8f9fa;
+    font-size: 12px
+}
+
+.btn-remove:hover {
+    color: #ffffff;
+    background-color: #F44336;
+    border-color: #F44336
+}
+
+/* Button Action */
+
+.btn-action {
+    position: relative;
+    background-color: #F44336;
+    text-transform: uppercase;
+    font-size: 14px;
+    border-radius: 0;
+    color: #fff;
+    overflow: hidden;
+}
+
+.btn-action::after {
+    content: "";
+    position: absolute;
+    top: -50px;
+    left: -75px;
+    height: 155px;
+    width: 50px;
+    background: #fff;
+    opacity: 0.4;
+    transform: rotate(35deg);
+    transition: all 0.7s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.btn-action:hover::after {
+    left: 120%;
+    transition: all 0.7s cubic-bezier(0.19, 1, 0.22, 1);
+}

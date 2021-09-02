@@ -1,0 +1,49 @@
+.shop-deal{
+    background: url(../../../assets/images/banner-mid.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.shop-deal-padd {
+    padding: 100px 0;
+}
+
+.shop-deal__content {
+    text-align: center;
+}
+
+.shop-deal__content .shop-deal_title{
+    font-size: 3em;
+    font-weight: 700;
+    letter-spacing: 10px;
+    color: #fff;
+}
+
+.shop-deal__content .shop-deal_subtitle{
+    font-size: 20px;
+    color: #fff;
+}
+
+.shop-deal__content .shop-deal_desc{
+    font-size: 22px;
+    font-weight: 400;
+    color: burlywood;
+}
+
+@media (max-width: 767px) {
+    
+    .shop-deal-padd {
+        padding: 50px 0;
+    }
+
+    .shop-deal__content .shop-deal_title{
+        font-size: 20px;
+        letter-spacing: 1px;
+    }
+
+    .shop-deal__content .shop-deal_subtitle,
+    .shop-deal__content .shop-deal_desc {
+        font-size: 16px;
+    }
+}

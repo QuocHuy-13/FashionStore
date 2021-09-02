@@ -1,0 +1,58 @@
+
+.checkout-billing-detail h2 {
+    font-size: 2.5rem;
+    line-height: 1.5;
+    border-bottom: 1px solid #c5c5c5;
+    padding-bottom: 15px;
+    margin-bottom: 25px;
+    margin-top: 15px;
+}
+
+.checkout-billing-detail .billing-form {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 22px;
+}
+
+.single-input-item {
+    margin-bottom: 20px;
+}
+
+.single-input-item label {
+    color: #202020;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+.single-input-item input {
+    padding: 10px 20px;
+    outline: none;
+    transition: all 0.4s ease-out;
+    width: 100%;
+}
+
+.single-input-item textarea {
+    padding: 15px 20px;
+    outline: none;
+    transition: all 0.4s ease-out;
+    width: 100%;
+}
+
+.single-input-item > ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+.single-input-item > ul > li > input {
+    width: inherit;
+}
+
+.single-input-item > ul > li > label {
+    padding-left: 15px;
+    font-weight: 400;
+}
+
+.delivery-label {
+    padding-left: 15px;
+    font-weight: 400;
+}

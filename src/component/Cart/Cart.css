@@ -1,0 +1,20 @@
+.shop-cart {
+    background-color: #fff;
+    text-align: center;
+}
+
+.shop-cart .text-center > i {
+    font-size: 5rem;
+    color: #3ba946;
+}
+
+.shop-cart > img {
+    width: 20rem;
+    margin-bottom: 20px;
+}
+
+.shop-cart > h5 > a{
+    text-decoration: none;
+    color: #fe4847;
+}
+

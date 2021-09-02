@@ -1,0 +1,133 @@
+.home-showProduct {
+    padding: 100px 0;
+    background: #F1F1F1;
+}
+
+.products-section-title{
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.products-section-title h2{
+    text-transform: uppercase;
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+
+.title-icon span {
+    font-size: 22px;
+    position: relative;
+}
+
+.title-icon span::before, .title-icon span::after {
+    position: absolute;
+    border-top: 4px double #666;
+    bottom: 10px;
+    content: "";
+    height: 1px;
+    left: -85px;
+    width: 80px;
+}
+
+.title-icon span::after {
+    left: auto;
+    right: -85px;
+}
+
+.product-img {
+    overflow: hidden;
+    position: relative;
+}
+
+.product-img a {
+    display: block;
+}
+
+/* .product-img a {
+    transition: all 0.3s ease 0s;
+    text-decoration: none;
+} */
+
+.product-img img {
+    max-width: 100%;
+    height: auto;
+}
+
+.product-img > a::before {
+    position: absolute;
+    content: "";
+    background: #000 none repeat scroll 0 0;
+    height: 100%;
+    opacity: 0;
+    transition: all 0.3s ease 0s;
+    width: 100%;
+    z-index: 9;
+}
+
+img.secondary-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: all 0.3s ease 0s;
+}
+
+.show-product:hover a::before {
+    opacity: .6;
+}
+
+.show-product:hover img.secondary-img {
+    opacity: 1;
+}
+
+.product-bedge {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    background-color: #222222;
+    border-radius: 50%;
+    text-align: center;
+    height: 38px;
+    width: 38px;
+    line-height: 38px;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 11px;
+}
+
+.product-content {
+    background: #222 none repeat scroll 0 0;
+    padding: 12px 12px;
+    color: #fff;
+}
+
+.product-content h3 {
+    font-size: 17px;
+    margin-bottom: 8px;
+}
+
+.product-content .price span {
+    color: #fe4847;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.product-content .price span:last-child {
+    color: #ddd;
+    font-size: 14px;
+    margin-left: 10px;
+    text-decoration: line-through;
+}
+
+@media (max-width: 767px) {
+    .home-showProduct {
+        padding: 50px 0;
+        background: #F1F1F1;
+    }
+
+    .show-product {
+        padding: 0 20px;
+        margin-bottom: 20px;
+    }
+}

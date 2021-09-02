@@ -1,0 +1,18 @@
+.shop-empty {
+    width: 450px;
+    margin: 0 auto;
+}
+
+.shop-empty h4 {
+    font-size: 1.4rem;
+}
+
+@media (max-width: 480px) {
+    .shop-empty {
+        width: 300px;
+    }
+
+    .shop-empty h4 {
+        font-size: 1.2rem;
+    }
+}

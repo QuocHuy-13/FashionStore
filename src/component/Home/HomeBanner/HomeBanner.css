@@ -1,0 +1,106 @@
+.home-banner {
+    padding: 100px 0;
+}
+
+.single-banner {
+    position: relative;
+    overflow: hidden;
+}
+
+.single-banner > a {
+    position: relative;
+    display: block;
+}
+
+.single-banner > a::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: #000 none repeat scroll 0 0;
+    transition: all 0.3s ease 0s;
+    opacity: 0;
+}
+
+.single-banner img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+.banner-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 30px;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: all 0.3s ease 0s;
+    color: #fff;
+}
+
+.banner-content h2 {
+    font-weight: 700;
+    top: 30px;
+    transform: translate3d(0px, 20px, 0px);
+    transition: transform 0.35s ease 0s;
+    font-size: 25px;
+}
+
+.banner-content h2::before {
+    content: "";
+    background: #fff none repeat scroll 0 0;
+    height: 2px;
+    left: 0;
+    position: absolute;
+    top: 100%;
+    transform: translate3d(0px, 40px, 0px);
+    width: 100%;
+}
+
+.banner-content p {
+    bottom: 30px;
+    font-size: 14px;
+    line-height: 1.5;
+    transform: translate3d(0px, 100%, 0px);
+}
+
+.banner-content h2, .banner-content p {
+    left: 30px;
+    padding: 10px 0;
+    position: absolute;
+    right: 30px;
+}
+
+.banner-content h2::before, .banner-content p {
+    opacity: 0;
+    transition: opacity 0.35s ease 0s, transform 0.35s ease 0s;
+}
+
+.single-banner:hover a::before {
+    opacity: .5;
+}
+
+.single-banner:hover .banner-content {
+    opacity: 1;
+}
+
+.single-banner:hover h2 {
+    transform: translate3d(0px, 0px, 0px);
+}
+
+.single-banner:hover h2::before, .single-banner:hover p {
+    opacity: 1;
+    transform: translate3d(0px, 0px, 0px);
+}
+
+@media (max-width: 767px) {
+    .single-banner {
+        margin-bottom: 20px;
+    }
+
+    .home-banner {
+        padding-bottom: 50px;
+    }
+}

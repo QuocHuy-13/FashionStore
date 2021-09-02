@@ -1,0 +1,22 @@
+.checkOut-order {
+    padding: 6rem 0;
+}
+
+.checkOut-order-content {
+    text-align: center;
+} 
+
+.checkOut-order-content svg {
+    font-size: 5rem;
+    color: #28a745;
+}
+
+.checkOut-order-content h3 {
+    color: #28a745;
+    margin-top: 0.8rem;
+    text-transform: uppercase;
+}
+
+.checkOut-order-content h5 {
+    margin: 2rem 0 ;
+}

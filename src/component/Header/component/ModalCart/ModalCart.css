@@ -1,0 +1,140 @@
+.my-cart {
+    position: relative;
+}
+
+.my-cart .total-cart a {
+    display: block;
+    color: #fff;
+    height: 30px;
+    width: 30px;
+    font-size: 16px;
+    text-align: center;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    line-height: 27px;
+    position: relative;
+}
+
+.my-cart .total-cart a span {
+    position: absolute;
+    top: -13px;
+    left: 7px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    color: #000;
+    font-size: 13px;
+    line-height: 16px;
+    text-align: center;
+    background: #fff;
+}
+
+.my-cart .cart-modal {
+    background: #fff none repeat scroll 0 0;
+    padding: 25px 15px;
+    position: absolute;
+    right: 0;
+    top: 125%;
+    transform-origin: center top 0;
+    transition: all 0.5s ease 0s;
+    width: 276px;
+    z-index: 9999;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.my-cart:hover .cart-modal{
+    opacity: 1;
+    visibility: visible;
+}
+
+.cart-modal ul {
+    max-height: 180px;
+    overflow-y: scroll;
+}
+
+.cart-empty {
+    text-align: center;
+}
+
+.cart-empty img {
+    width: 100px;
+    margin-bottom: 5px;
+}
+
+.my-cart ul li {
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+.my-cart ul li:last-child {
+    margin-bottom: 0;
+}
+
+.cart-modal-img {
+    width: 60px;
+    float: left;
+}
+
+.cart-modal-img img {
+    max-width: 100%;
+    height: auto;
+}
+
+.cart-modal-info {
+    float: left;
+    padding-left: 10px;
+}
+
+.cart-modal-info h4 {
+    font-size: 1rem;
+    margin-bottom: 0.25rem;
+}
+
+.cart-modal-info span {
+    color: #6c757d;
+    font-weight: 600;
+}
+
+.cart-modal-info span + span {
+    display: block;
+}
+
+.cart-modal-total {
+    border-top: 1px solid #ddd;
+    padding-top: 5px;
+    margin: 5px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cart-modal-total__title,
+.cart-modal-total__price  {
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.cart-modal-viewCart,
+.cart-modal-checkOut {
+    display: inline-block;
+    border: 1px solid #ddd;
+    color: #222;
+    font-size: 12px;
+    font-weight: 700;
+    height: 30px;
+    line-height: 27px;
+    padding: 0 20px;
+    text-transform: uppercase;
+    transition: all 0.3s ease 0s;
+}
+
+.cart-modal-viewCart:hover,
+.cart-modal-checkOut:hover {
+    background-color: #FE4847;
+    color: #fff;
+    border-color: #FE4847;
+}
+
+.cart-modal-checkOut {
+    float: right;
+}
